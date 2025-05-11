@@ -66,7 +66,11 @@ pnpm dev
 ```
 You should see the Default **Home** component.
 
-<img src="./ezgif-4fd10c2f6507fc.gif" />
+
+https://github.com/user-attachments/assets/29225ead-ce0c-48cf-afb2-0aac3a1fdd54
+
+
+
 
 In order to use the API Call you need to create an ENV file in your root folder.
 
