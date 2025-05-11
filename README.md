@@ -1,5 +1,5 @@
 <p align="center" style="background: white">
-  <img src="./create-react-redux-ts-app-logo.png" alt="CRRA Logo" width="200"/>
+  <img src="./new-react-redux-ts-app.png" alt="CRRA Logo" width="400"/>
 </p>
 
 <h1 align="center">new-react-redux-ts-app</h1>

@@ -1,42 +1,9 @@
-import { useState } from 'react';
-import Logo from '../assets/img/create-react-redux-ts-app-logo.png';
+import Logo from '../assets/img/new-react-redux-ts-app.png';
 import styles from '../App.module.scss';
 import { increment } from '../store/slices/counter/actions';
 import { fetchUser } from '../store/slices/users/actions';
 import { useAppDispatch, useAppSelector } from '../store/hooks';
 import { selectCounterValue, selectUserData, selectUserLoading } from '../store/selectors'
-
-const colors = [
-  { name: 'Ruddy Blue', hex: '#81AAD2' },
-  { name: 'Alice Blue', hex: '#F6FCFE' },
-  { name: 'White', hex: '#FEFEFE' },
-  { name: 'Federal Blue', hex: '#030861' },
-  { name: 'Federal Blue 2', hex: '#03045D' },
-];
-
-const ColorPaletteRow = () => {
-  return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <div style={{ display: 'flex', gap: '1rem', padding: '1rem', fontFamily: 'sans-serif' }}>
-        {colors.map((color) => (
-          <div key={color.name} style={{ textAlign: 'center' }}>
-            <div
-              style={{
-                width: '60px',
-                height: '60px',
-                backgroundColor: color.hex,
-                borderRadius: '4px',
-                border: color.hex === '#FEFEFE' || color.hex === '#F6FCFE' ? '1px solid #ccc' : 'none',
-              }}
-            ></div>
-            <small>{color.name}</small>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
 
 
 const Home = () => {
@@ -54,10 +21,10 @@ const Home = () => {
   return (
     <div className={styles.centeredContent}>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <img src={Logo} className="animate-pulse mt-[50px] items-center" style={{ width: '500px' }} />
+        <img src={Logo} className="animate-pulse mt-[50px] items-center" style={{ width: '900px' }} />
       </div>
       <p>
-        <small>If the image is pulsing, tailwind is installed and configured correctly</small>
+        <small className="text-2xl">If the image is pulsing, tailwind is installed and configured correctly</small>
       </p>
       <button
         className="cursor-pointer mt-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
